@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "Customer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "IDNation": {
+      "type": "string"
+    },
+    "FullName": {
+      "type": "string"
+    },
+    "DOB": {
+      "type": "string"
+    },
+    "Add": {
+      "type": "string"
+    },
+    "DateFrom": {
+      "type": "date",
+      "required": false,
+      "private": false
+    },
+    "DateTo": {
+      "type": "date"
+    },
+    "room": {
+      "model": "room",
+      "via": "customer"
+    }
+  }
+}

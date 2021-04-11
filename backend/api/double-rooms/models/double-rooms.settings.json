@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "double_rooms",
+  "info": {
+    "name": "Double Rooms",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "RoomID": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "FullName": {
+      "type": "string"
+    },
+    "NationID": {
+      "type": "string"
+    },
+    "DOB": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "DateFrom": {
+      "type": "date"
+    },
+    "DateTo": {
+      "type": "date"
+    }
+  }
+}

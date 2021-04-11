@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rooms",
+  "info": {
+    "name": "Room",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "RoomID": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Type": {
+      "type": "string",
+      "required": true
+    },
+    "Status": {
+      "type": "string",
+      "required": true
+    },
+    "customer": {
+      "via": "room",
+      "model": "customer"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/double-rooms",
+      "handler": "double-rooms.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/double-rooms/count",
+      "handler": "double-rooms.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/double-rooms/:id",
+      "handler": "double-rooms.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/double-rooms",
+      "handler": "double-rooms.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/double-rooms/:id",
+      "handler": "double-rooms.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/double-rooms/:id",
+      "handler": "double-rooms.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
